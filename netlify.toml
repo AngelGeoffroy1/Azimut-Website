@@ -1,0 +1,4 @@
+[build]
+  base = "Azimut Website"
+  command = "npm run build"
+  publish = "dist"
