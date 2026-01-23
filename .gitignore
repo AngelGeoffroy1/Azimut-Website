@@ -32,3 +32,9 @@ Pods/
 
 # Secrets - NE JAMAIS COMMITER
 **/Secrets.plist
+
+# Node
+node_modules/
+
+# iOS app (ne fait pas partie du site web)
+azimut/
