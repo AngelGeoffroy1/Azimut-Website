@@ -221,6 +221,179 @@ footer {
   opacity: 0.5;
 }
 
+/* Footer Links */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: var(--text);
+  text-decoration: none;
+  opacity: 0.7;
+  font-size: 0.9rem;
+  transition: opacity 0.2s;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Legal Pages */
+.legal-page {
+  overflow: auto;
+  height: auto;
+  min-height: 100vh;
+  padding: 2rem;
+  align-items: flex-start;
+}
+
+.legal-container {
+  max-width: 900px;
+  padding: 2rem 1rem;
+}
+
+.legal-card {
+  text-align: left;
+}
+
+.legal-card header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.back-link {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+
+.back-link:hover {
+  opacity: 0.7;
+}
+
+.legal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.legal-content section {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.legal-content section:last-child {
+  border-bottom: none;
+}
+
+.legal-content h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+.legal-content h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.legal-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.legal-content p {
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.legal-content ul {
+  margin-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.legal-content li {
+  line-height: 1.6;
+  margin-bottom: 0.4rem;
+}
+
+.legal-content a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.legal-content a:hover {
+  text-decoration: underline;
+}
+
+/* Subscription Section Styles */
+.subscription-section {
+  background: rgba(22, 152, 115, 0.05);
+  padding: 1.5rem;
+  border-radius: 20px;
+  margin: 0 -1rem;
+}
+
+.subscription-benefits {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+
+.subscription-options {
+  margin: 1.5rem 0;
+}
+
+.subscription-card {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 1.25rem 1.5rem;
+  border-radius: 16px;
+  margin: 1rem 0;
+  border: 1px solid rgba(22, 152, 115, 0.2);
+}
+
+.subscription-card .price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+}
+
+.subscription-card .trial {
+  display: inline-block;
+  background: var(--secondary);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.subscription-terms {
+  margin-top: 1.5rem;
+}
+
+.subscription-terms ul {
+  background: rgba(255, 255, 255, 0.4);
+  padding: 1rem 1rem 1rem 2.5rem;
+  border-radius: 12px;
+}
+
 /* Mobile Adjustments */
 @media (max-width: 768px) {
   body {
@@ -245,5 +418,43 @@ footer {
 
   .actions {
     text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .legal-page {
+    padding: 1rem;
+  }
+
+  .legal-container {
+    padding: 1rem 0.5rem;
+  }
+
+  .legal-card {
+    padding: 1.5rem;
+  }
+
+  .back-link {
+    position: relative;
+    top: auto;
+    left: auto;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  .subscription-section {
+    margin: 0 -0.5rem;
+    padding: 1rem;
+  }
+
+  .legal-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .legal-content h2 {
+    font-size: 1.2rem;
   }
 }
